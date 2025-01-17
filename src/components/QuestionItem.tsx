@@ -38,13 +38,13 @@ export const QuestionItem = ({ question, count, onAnswer }: Props) => {
                 selectedAnswer !== null &&
                 selectedAnswer === question.answer &&
                 selectedAnswer === key &&
-                "bg-green-200 border-green-400"
+                "bg-green-200 border-green-500"
               }
               ${
                 selectedAnswer !== null &&
                 selectedAnswer !== question.answer &&
                 selectedAnswer === key &&
-                "bg-red-200 border-red-400"
+                "bg-red-200 border-red-500"
               }
             `}
             onClick={() => checkQuestion(key)}
